@@ -11,3 +11,25 @@ p.then(function(result){
     console.log(result);
     
 });
+
+// 2. Create a Promise that checks whether a number is even or odd.
+
+let P = new Promise(function(resolve,reject){
+    let number = 2;
+
+    if(number%2==0){
+        resolve("Even number")
+    }else{
+        reject("odd number")
+    }
+});
+
+Promise
+P.then(function(result){
+    console.log(result);
+    
+})
+.catch(function(error){
+    console.log(error);
+    
+});
