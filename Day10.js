@@ -33,3 +33,25 @@ P.then(function(result){
     console.log(error);
     
 });
+
+// 3. Create a Promise for student pass or fail
+
+let p2 = new Promise(function(resolve,reject){
+
+    let marks =35;
+
+    if(marks>=35){
+        resolve("Student Passed");
+    }else{
+        reject("Student Failed");
+    }
+});
+
+p2.then(function(result){
+    console.log(result);
+    
+})
+.catch(function(error){
+    console.log(error);
+    
+});
