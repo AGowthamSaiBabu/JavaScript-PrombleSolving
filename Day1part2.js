@@ -10,4 +10,8 @@ var $num_Val=8;
 $num_Val=16;
 console.log($num_Val);
 
+// 18.What happens in this code?
+console.log(_x_Val12);
+var _x_Val12 =27;
+
 
