@@ -14,4 +14,9 @@ console.log($num_Val);
 console.log(_x_Val12);
 var _x_Val12 =27;
 
+// 19.What is the final value of Val_12X$?
+var Val_12x$ =10;
+Val_12x$ = 20;
+console.log(Val_12x$);
+
 
