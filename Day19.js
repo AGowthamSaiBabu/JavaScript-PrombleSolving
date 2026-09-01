@@ -63,6 +63,79 @@ for(let i=0;i<arr.length;i++){
 console.log(EvenSum);
 console.log(OddSum);
 
+// 5) Take a heterogenious array and separate each data type into new array
+// hints : use loop, typeof and push method
+// inp: let arr = ["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}];
+// out :
+// num=[3,4,5,6]
+// str=["apple","banana","mango","banana"]
+// bool=[true]
+// obj=[{name: "object"}]
+
+let arr2 =["apple,","Banana","mango",3,4,5,6,true,{name:"object"}]
+let numbers =[];
+let string =[];
+let boolen =[];
+let object =[];
+
+for(let i=0;i<arr.length;i++){
+  if(typeof arr2[i] ==="number"){
+    numbers.push(arr2[i]);
+  }else if(typeof arr2[i] ==="String"){
+    string.push(arr2[i]);
+  }else if(typeof arr2[i] ==="boolean"){
+    boolen.push(arr2[i]);
+  }else if(typeof arr2[i]  ==="object"){
+    object.push(arr2[i]);
+  }
+}
+
+// Task 1: Using concat
+// Objective: Merge two or more arrays.
+// Task: Create two arrays, one with your favorite sports and one with your favorite hobbies. Use the concat method to merge them into a single array.
+// Expected Output: Display the merged array.
+
+let sports =["cricket","tennis","Football"];
+
+let hobbies =["muscie","cooking","Coding"];
+
+let result =sports.concat(hobbies);
+
+console.log(result);
+
+// Task 2: Using splice
+// Objective: Modify an array by adding, removing, or replacing elements.
+// Task: Create an array of numbers from 1 to 10. Use the splice method to remove the 
+// numbers 4, 5, and 6, and replace them with the numbers 40, 50, and 60.
+// Expected Output: Display the array before and after the splice operation.
+
+
+let arr3 =[1,2,3,4,5,6,7,8,9,10];
+console.log("Before :",arr3);
+
+arr3.splice(3,3,40,50,60);
+
+console.log("Affter :",arr3);
+
+// Task 3: Using slice
+// Objective: Extract a portion of an array without modifying the original array.
+// Task: Create an array of the days of the week. Use the slice method to create a new array that contains only the weekdays.
+// Expected Output: Display the original array and the new array.
+
+let days =[
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri",
+  "Sat",
+  "sun"
+];
+
+let weekdays =days.slice(0, 5);
+
+console.log("Origin :",days);
+console.log("Weekdays :",weekdays);
 
 
 
